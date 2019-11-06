@@ -26,7 +26,8 @@ public class Review {
     @Column(length = 60000)
     private String textReview;
 
-    public Review(String productId, String userId, String profileName, String summary, String textReview) {
+    public Review(String productId, String userId, String profileName,
+                  String summary, String textReview) {
         this.productId = productId;
         this.userId = userId;
         this.profileName = profileName;

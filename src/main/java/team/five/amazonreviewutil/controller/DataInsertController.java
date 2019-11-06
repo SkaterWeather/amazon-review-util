@@ -1,22 +1,22 @@
 package team.five.amazonreviewutil.controller;
 
-import javax.annotation.PostConstruct;
 import java.io.IOException;
+import javax.annotation.PostConstruct;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import team.five.amazonreviewutil.service.ServiceParsing;
+import team.five.amazonreviewutil.service.CsvParserService;
 
 @Component
 public class DataInsertController {
 
-    private static final String DATA_FILE_NAME = "D:\\My\\MA\\project\\Reviews.csv";
+    private static final String FILE_NAME = "Reviews.csv";
 
     @Autowired
-    ServiceParsing serviceParsing;
+    CsvParserService csvParserService;
 
     @PostConstruct
     public void injectReviewsToDb() throws IOException {
-        serviceParsing.processInputFile(DATA_FILE_NAME);
+        csvParserService.processInputFile(FILE_NAME);
     }
 }
