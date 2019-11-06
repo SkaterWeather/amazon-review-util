@@ -1,0 +1,8 @@
+
+
+2019-11-06 14:25:18 INFO  ServiceParsing:69 - Read number of items: 100000
+2019-11-06 14:25:39 INFO  ServiceParsing:69 - Read number of items: 200000
+2019-11-06 14:25:58 INFO  ServiceParsing:69 - Read number of items: 300000
+2019-11-06 14:26:17 INFO  ServiceParsing:69 - Read number of items: 400000
+2019-11-06 14:26:35 INFO  ServiceParsing:69 - Read number of items: 500000
+2019-11-06 14:26:48 INFO  ServiceParsing:80 - Items read from file: 568454
