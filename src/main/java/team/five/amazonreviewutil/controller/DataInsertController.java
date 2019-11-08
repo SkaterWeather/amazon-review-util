@@ -9,14 +9,13 @@ import team.five.amazonreviewutil.service.CsvParserService;
 
 @Component
 public class DataInsertController {
-
     private static final String FILE_NAME = "Reviews.csv";
 
     @Autowired
-    CsvParserService csvParserService;
+    private CsvParserService csvParserService;
 
     @PostConstruct
     public void injectReviewsToDb() throws IOException {
-        csvParserService.processInputFile(FILE_NAME);
+        csvParserService.saveReviewsToDb(FILE_NAME);
     }
 }
