@@ -1,7 +1,9 @@
 HELP.md
 target/
+.idea/
+.mvn/
 *.log
-!.mvn/wrapper/maven-wrapper.jar
+src/main/resources/Reviews.csv
 
 ### STS ###
 .apt_generated
@@ -14,7 +16,6 @@ target/
 
 ### IntelliJ IDEA ###
 mvnw
-.idea
 *.iws
 *.iml
 *.ipr

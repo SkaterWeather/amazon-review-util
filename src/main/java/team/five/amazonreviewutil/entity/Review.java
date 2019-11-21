@@ -19,11 +19,19 @@ public class Review {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
+
+    @Column(name = "product_id")
     private String productId;
+
+    @Column(name = "user_id")
     private String userId;
+
+    @Column(name = "profile_name")
     private String profileName;
+
     private String summary;
-    @Column(length = 60000)
+
+    @Column(name = "text_review", length = 60000)
     private String textReview;
 
     public Review(String productId, String userId, String profileName,
