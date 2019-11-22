@@ -1,10 +1,11 @@
 package team.five.amazonreviewutil.service;
 
 import java.util.List;
-import team.five.amazonreviewutil.repositiry.ReviewRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import team.five.amazonreviewutil.repositiry.ReviewRepository;
 
 @Service
 public class ReviewAnalyzerService {
